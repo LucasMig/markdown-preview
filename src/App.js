@@ -12,6 +12,9 @@ function App() {
           value={markdown}
           onChange={(event) => setMarkdown(event.target.value)}
         ></textarea>
+        <article className="result">
+          <ReactMarkdown>{markdown}</ReactMarkdown>
+        </article>
       </section>
     </main>
   );
